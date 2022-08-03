@@ -1,0 +1,12 @@
+version: '2'
+
+services:
+  web:
+    image: eboraas/apache-php
+    ports:
+      - "5001:80"
+      - "5002:80"
+      - "6001:443"
+      - "6002:443"
+    volumes:
+     - .:/var/www/html
